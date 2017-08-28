@@ -1,6 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 SRC_URI += "file://defconfig \
+            file://primo81-usb-host.patch \
 "
 
 COMPATIBLE_MACHINE = "(sun4i|sun5i|sun6i|sun7i)"
