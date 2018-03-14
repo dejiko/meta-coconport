@@ -10,6 +10,5 @@ require recipes-kernel/linux/linux.inc
 SRC_URI = "${KERNELORG_MIRROR}/linux/kernel/v4.x/linux-${PV}.tar.xz;name=kernel"
 S = "${WORKDIR}/linux-${PV}"
 
-SRC_URI[kernel.md5sum] = "d8f9218277a3f0d2e1703676002be428"
-SRC_URI[kernel.sha256sum] = "5bfd9ed52c1ccd8dcd6418646d5a78b0af501cfdcd3e0900f1918ecba1a8af97"
-
+SRC_URI[kernel.md5sum] = "c55f9b201ed60b03ee879efd263d01dd"
+SRC_URI[kernel.sha256sum] = "6dcfbf79c068e51c1b06edb1ce58ddc9ca351f862bf2a144e96106ec3f21e587"
