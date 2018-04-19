@@ -3,11 +3,13 @@ DESCRIPTION = "Mainline Linux kernel"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-inherit kernel
+KBRANCH ?= "master"
 
-require recipes-kernel/linux/linux.inc
+require recipes-kernel/linux/linux-yocto.inc
 
-SRC_URI = "${KERNELORG_MIRROR}/linux/kernel/v4.x/linux-${PV}.tar.xz;name=kernel"
+SRC_URI = "${KERNELORG_MIRROR}/linux/kernel/v4.x/linux-${PV}.tar.xz;name=kernel \
+           file://thinclient-usb-device.cfg"
+
 S = "${WORKDIR}/linux-${PV}"
 
 SRC_URI[kernel.md5sum] = "c55f9b201ed60b03ee879efd263d01dd"
