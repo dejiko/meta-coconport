@@ -2,7 +2,7 @@
 
 DESCRIPTION = "Packagegroup for opencocon thinclient on cocon486 machine (X.org depends library)"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=4d92cd373abda3937c2bc47fbc49d690"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 inherit packagegroup
 
@@ -54,7 +54,6 @@ xf86-video-s3virge \
 xf86-video-savage \
 xf86-video-siliconmotion \
 xf86-video-sis \
-xf86-video-sisimedia \
 xf86-video-sisusb \
 xf86-video-tdfx \
 xf86-video-trident \
