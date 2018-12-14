@@ -1,0 +1,5 @@
+
+#patch e27c49291a7fe9dc415c9fcab5bd781ec82dfe04.patch
+
+# Config for Clover Trail Tablets
+#kconf hardware clover-trail.cfg
