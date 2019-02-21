@@ -7,5 +7,6 @@ KBUILD_DEFCONFIG_cocon486 = "i386_defconfig"
 
 SRC_URI_append_cocon486 += " \
 	file://cocon486-standard.scc \
+	file://cocon486.scc \
 "
 
