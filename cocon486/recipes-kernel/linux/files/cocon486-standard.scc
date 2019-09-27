@@ -4,4 +4,3 @@ patch add-kme-kxlc005-0x2804.patch
 
 # Config for old x86 PCs
 kconf hardware cocon486.cfg
-kconf hardware thinclient-usb-device.cfg
