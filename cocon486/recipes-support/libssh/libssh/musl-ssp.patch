@@ -1,0 +1,26 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 89ba06d4..b8e145d6 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -94,6 +94,9 @@ else (UNIX)
+     set(WITH_SYMBOL_VERSIONING OFF)
+ endif (UNIX)
+ 
++# for musl
++find_library(SSP_NONSHARED ssp_nonshared)
++
+ # config.h checks
+ include(ConfigureChecks.cmake)
+ configure_file(config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h)
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index fffb9a43..76acff04 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -9,6 +9,7 @@ set(LIBSSH_PRIVATE_INCLUDE_DIRS
+ 
+ set(LIBSSH_LINK_LIBRARIES
+   ${LIBSSH_REQUIRED_LIBRARIES}
++  ${SSP_NONSHARED}
+ )
+ 
+ if (WIN32)
